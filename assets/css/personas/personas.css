@@ -17,15 +17,15 @@
 }
 
 .persona__imagen--roberta{
-    background-image: url('/assets/img/personas/roberta.jpg');
+    background-image: url('../../img/personas/roberta.jpg');
 }
 
 .persona__imagen--marcela{
-    background-image: url('/assets/img/personas/marcela.jpg');
+    background-image: url('../../img/personas/marcela.jpg');
 }
 
 .persona__imagen--andrea{
-    background-image: url('/assets/img/personas/andrea.jpg');
+    background-image: url('../../img/personas/andrea.jpg');
 }
 
 .persona__nombre{
