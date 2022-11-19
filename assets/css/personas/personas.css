@@ -1,12 +1,12 @@
 .personas{
     display: flex;
-    justify-content: space-around;
     padding-top: 3rem;
 }
 
 .persona{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .persona__imagen{
@@ -14,8 +14,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
-    height: 300px;
-    width: 300px;
 }
 
 .persona__imagen--roberta{
@@ -35,10 +33,50 @@
     font-family: Pacifico, cursive;
     font-size: 2rem;
     margin: 1rem 0;
+    text-transform: capitalize;
 }
 
 .persona__funcion{
     color: #595959;
     font-size: 1.25rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 0){
+    .personas{
+        flex-direction: column;
+    }
+
+    .persona{
+        margin-bottom: 2rem;
+    }
+
+    .persona__imagen{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .personas{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .persona{
+        margin-bottom: 0rem;
+        margin-right: 2rem;
+    }
+
+    .persona__imagen{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1022px){
+    .persona__imagen{
+        height: 300px;
+        width: 300px;
+    }
 }

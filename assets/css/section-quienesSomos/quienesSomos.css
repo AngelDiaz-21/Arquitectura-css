@@ -1,17 +1,42 @@
 .quienes-somos{
-    padding: 5rem;
     text-align: center;
 }
 
 .quienes-somos__titulo{
     color: #8d0606;
     font-family: Pacifico, cursive;
-    font-size: 3.1875rem;
     margin-bottom: 1rem;
 }
 
 .quienes-somos__descripcion{
-    color: #595959;
-    font-size: 1.75rem;
-    font-weight: 100;
+    color: black;
+}
+
+@media screen and (min-width: 0){
+    .quienes-somos{
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .quienes-somos__titulo{
+        font-size: 2rem;
+    }
+
+    .quienes-somos__descripcion{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .quienes-somos{
+        padding: 5rem;
+    }
+
+    .quienes-somos__titulo{
+        font-size: 3.1875rem;
+    }
+
+    .quienes-somos__descripcion{
+        font-size: 1.75rem;
+    }
 }

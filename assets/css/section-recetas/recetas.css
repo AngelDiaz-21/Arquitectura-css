@@ -2,7 +2,6 @@
     background-color: #e5e5e5;
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 0 5rem;
 }
 
 .receta{
@@ -10,8 +9,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-    margin-right: 5rem;
-    width: calc(25% - 5rem);
     border-radius: 10px 10px 0 0;
 }
 
@@ -24,12 +21,7 @@
     padding: 1rem;
 }
 
-.receta__titulo{
-    font-size: 1.4375rem;
-}
-
 .receta__descripcion{
-    font-size: 1.1875rem;
     line-height: 1.5;
     text-align: justify;
 }
@@ -42,3 +34,78 @@
     padding: 0.5rem;
 }
 
+@media screen and (min-width: 0){
+    .recetas{
+        padding: 3rem 1rem 0 1rem;
+    }
+
+    .receta{
+        width: 100%;
+    }
+
+    .receta__titulo{
+        font-size: 1.125rem;
+    }
+
+    .receta__descripcion{
+        font-size: 0.9375rem;
+    }
+    
+}
+
+@media screen and (min-width: 450px){
+    .recetas{
+        justify-content: center;
+    }
+
+    .receta{
+        width: 57%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .recetas{
+        justify-content: flex-start;
+        padding: 5rem 0 0 2.5rem;
+    }
+
+    .receta{
+        margin-right: 2.5rem;
+        width: calc(33% - 2.5rem);
+    }
+
+    .receta__titulo{
+        font-size: 1.4375rem;
+    }
+    
+    .receta__descripcion{
+        font-size: 1.1875rem;
+    }
+
+    .receta__boton:hover{
+        cursor: pointer;
+        background-color: rgba(141, 6, 6, 0.8);
+    }
+}
+
+@media screen and (min-width: 922px){
+    .recetas{
+        padding: 5rem 0 0 5rem;
+    }
+    
+    .receta{
+        margin-right: 5rem;
+        width: calc(33% - 5rem);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .recetas{
+        padding: 5rem 0 0 10rem;
+    }
+    
+    .receta{
+        margin-right: 5rem;
+        width: calc(24% - 5rem);
+    }
+}
