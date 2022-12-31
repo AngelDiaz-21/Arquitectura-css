@@ -1,7 +1,13 @@
 # Arquitectura-css
 Curso de arquitectura de Alura. 
 
-Prototipo: https://www.figma.com/file/ZIZuMVCGh6cE3UQvTbFsuj/alura-bootstrap?node-id=0%3A1
+<a target="_blank" href="https://angeldiaz-21.github.io/front-santander-bedu-2022/">Ver página</a>
+
+[Ver prototipo](https://www.figma.com/file/ZIZuMVCGh6cE3UQvTbFsuj/alura-bootstrap?node-id=0%3A1) 
+
+<!-- <pre>
+    <a href="https://angeldiaz-21.github.io/front-santander-bedu-2022/">Ver página</a>
+</pre> -->
 
 ## ¿Que se aprendió a lo largo del curso?
 * Organizar y estructurar los archivos css del proyecto.
