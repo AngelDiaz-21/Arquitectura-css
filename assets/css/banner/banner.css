@@ -1,5 +1,9 @@
 .banner{
     position: relative;
+    background-color: black;
+    background: #263238 url("../../img/banner.jpg") no-repeat center center / cover;
+    object-fit: fill;
+    height: 50vh;
 }
 
 .banner__imagen{
