@@ -5,3 +5,10 @@
     padding: 3rem 1rem ;
     text-align: center;
 }
+
+.pie-pagina .pie-pagina__volver-arriba{
+    margin-top: 2em;
+    display: flex;
+    justify-content: end;
+    font-size: 0.8rem;
+}
