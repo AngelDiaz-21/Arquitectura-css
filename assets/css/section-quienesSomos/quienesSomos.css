@@ -5,7 +5,7 @@
 .quienes-somos__titulo{
     color: #8d0606;
     font-family: Pacifico, cursive;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .quienes-somos__descripcion{
@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 0){
     .quienes-somos{
-        padding: 1rem;
+        padding: 4em 3em;
         text-align: center;
     }
 
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 768px){
     .quienes-somos{
-        padding: 5rem;
+        padding: 5em;
     }
 
     .quienes-somos__titulo{
