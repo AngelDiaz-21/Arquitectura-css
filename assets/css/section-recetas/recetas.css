@@ -1,29 +1,52 @@
 .recetas{
-    background-color: #e5e5e5;
+    background: #e5e5e5;
+    width: 100%;
+}
+
+.recetas-cards{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .receta{
     background-color: #fdfdfd;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
-    border-radius: 10px 10px 0 0;
+    margin-bottom: 2rem;
+    width: calc(100% - 5em);
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .receta__imagen{
-    height: 180px;
-    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
 }
 
 .receta__contenido{
-    padding: 1rem;
+    padding: 16px;
+}
+
+.receta__titulo{
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Número de líneas a mostrar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .receta__descripcion{
     line-height: 1.5;
     text-align: justify;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Número de líneas a mostrar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .receta__boton{
@@ -34,78 +57,85 @@
     padding: 0.5rem;
 }
 
-@media screen and (min-width: 0){
+@media screen and (min-width: 681px){
     .recetas{
-        padding: 3rem 1rem 0 1rem;
+        padding: 5em 0;
     }
 
-    .receta{
-        width: 100%;
+    .recetas-cards{
+        width: 80%;
     }
 
-    .receta__titulo{
-        font-size: 1.125rem;
+    .receta {
+        width: calc(35% - 2em);
+        max-width: none;
+        margin-right: 2em;
     }
 
-    .receta__descripcion{
-        font-size: 0.9375rem;
+    .receta:nth-child(3n){
+        margin-right: 0;
     }
-    
 }
 
-@media screen and (min-width: 450px){
+@media screen and (min-width: 801px){
+    .receta {
+        width: calc(34% - 2em);
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .receta {
+        width: calc(25% - 2em);
+    }
+
+    .receta:nth-child(3n){
+        margin-right: 2em;
+    }
+
+    .receta:nth-child(4n){
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1620px){
+    .recetas-cards{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 2280px){
+    .recetas-cards{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 680px){
     .recetas{
+        padding: 2em 0;
+    }
+
+    .recetas-cards{
+        width: 80%;
+    }
+
+    .receta {
+        width: calc(50% - 1em);
+        margin-right: 2em;
+    }
+
+    .receta:nth-child(2n){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .recetas-cards{
+        width: 90%;
         justify-content: center;
     }
-
-    .receta{
-        width: 57%;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .recetas{
-        justify-content: flex-start;
-        padding: 5rem 0 0 2.5rem;
-    }
-
-    .receta{
-        margin-right: 2.5rem;
-        width: calc(33% - 2.5rem);
-    }
-
-    .receta__titulo{
-        font-size: 1.4375rem;
-    }
     
-    .receta__descripcion{
-        font-size: 1.1875rem;
-    }
-
-    .receta__boton:hover{
-        cursor: pointer;
-        background-color: rgba(141, 6, 6, 0.8);
-    }
-}
-
-@media screen and (min-width: 922px){
-    .recetas{
-        padding: 5rem 0 0 5rem;
-    }
-    
-    .receta{
-        margin-right: 5rem;
-        width: calc(33% - 5rem);
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .recetas{
-        padding: 5rem 0 0 10rem;
-    }
-    
-    .receta{
-        margin-right: 5rem;
-        width: calc(24% - 5rem);
+    .receta {
+        width: 80%;
+        margin-right: 0;
     }
 }
