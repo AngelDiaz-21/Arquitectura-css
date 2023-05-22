@@ -9,11 +9,12 @@
 
 .sobre__descripcion{
     color: black;
+    padding: 0 1rem;
 }
 
 @media screen and (min-width: 0){
     .sobre{
-        padding: 2rem 1rem;
+        padding: 1rem 0rem;
     }
 
     .sobre__titulo{
@@ -27,7 +28,7 @@
 
 @media screen and (min-width: 768px){
     .sobre{
-        padding: 2.5rem;
+        padding: 0rem;
     }
 
     .sobre__titulo{
