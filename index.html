@@ -8,109 +8,141 @@
         <title>Fruta & Fruto</title>
         <link href="./assets/css/normalize.css" rel="stylesheet" />
         <link href="./assets/css/reset.css" rel="stylesheet" />
-        <link href="./assets/css/menu/header.css" rel="stylesheet" />
+        <link href="./assets/css/menu/header.css?version=1.0.1" rel="stylesheet" />
         <link href="./assets/css/banner/banner.css" rel="stylesheet" />
         <link href="./assets/css/section-sobre/sobre.css" rel="stylesheet" />
         <link href="./assets/css/section-recetas/recetas.css" rel="stylesheet" />
-        <link href="./assets/css/section-quienesSomos/quienesSomos.css" rel="stylesheet" />
+        <link href="./assets/css/section-quienesSomos/quienesSomos.css?version=1.0.1" rel="stylesheet" />
         <link href="./assets/css/personas/personas.css" rel="stylesheet" />
         <link href="./assets/css/footer/footer.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <header class="cabecera">
-            <img class="logo" src="./assets/img/logo.jpg" alt="Logo de la página">
-            <nav class="menu">
+        <a name="volver-arriba"></a>
+        <header class="menu sticky">
+            <div class="menu-logo-toggle">
+                <div class="menu-link">
+                    <img class="logo" src="./assets/img/logo.jpg" alt="Logo de la página">
+                </div>
+                <div class="menu-link menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <nav class="menu-items">
                 <ul class="menu__lista">
-                    <li class="menu__item"><a class="menu__link activo" href="#">Inicio</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Recetas</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">¿Quienes somos?</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
+                    <li class="menu-link">
+                        <a href="/" class="header__a--fuente">
+                            Inicio
+                        </a>
+                    </li>
+                    <li data-nav="Recetas" class="menu-link">
+                        <a href="#Recetas" class="header__a--fuente">
+                            Recetas
+                        </a>
+                    </li>
+                    <li data-nav="Quienes-somos" class="menu-link">
+                        <a href="#Quienes-somos" class="header__a--fuente">
+                            ¿Quienes somos?
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="banner">
-                <img class="banner__imagen" src="./assets/img/banner.jpg" alt="Banner">
+            <section class="banner" id="banner">
                 <h2 class="banner__titulo">Reaproveche mejor los alimentos</h2>
             </section>
-            <section class="sobre">
-                <h2 class="sobre__titulo">Recetas para economizar y ganar salud</h2>
-                <p class="sobre__descripcion">Nuestras recetas te ayudan a aprovechar mejor los alimentos, economizar, ganar tiempo y practicidad</p>
+            <section class="recetas" id="Recetas">
+                <div class="sobre">
+                    <h2 class="sobre__titulo">Recetas para economizar y ganar salud</h2>
+                    <p class="sobre__descripcion">Nuestras recetas te ayudan a aprovechar mejor los alimentos, economizar, ganar tiempo y practicidad</p>
+                </div>
+                <div class="recetas-cards">
+                    <div class="receta">
+                        <img alt="Tigela de abacate" class="receta__imagen" src="./assets/img/recetas/bowl-de-aguacate.jpg" />
+                        <div class="receta__contenido">
+                            <h3 class="receta__titulo" title="Bowl de aguacate">Bowl de aguacate</h3>
+                            <!-- <p class="receta__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p> -->
+                            <p class="receta__descripcion">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.</p>
+                            <button class="receta__boton">Ver receta</button>
+                        </div>
+                    </div>
+                    <div class="receta">
+                        <img alt="Ensalada de kiwi" class="receta__imagen" src="./assets/img/recetas/ensalada-de-kiwi.jpg" />
+                        <div class="receta__contenido">
+                            <h3 class="receta__titulo" title="Ensalada de kiwi">Ensalada de kiwi</h3>
+                            <p class="receta__descripcion">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.</p>
+                            <button class="receta__boton">Ver receta</button>
+                        </div>
+                    </div>
+                    <div class="receta">
+                        <img alt="Mix de vegetales" class="receta__imagen" src="./assets/img/recetas/mix-de-vegetales.jpg" />
+                        <div class="receta__contenido">
+                            <h3 class="receta__titulo" title="Mix de vegetales">Mix de vegetales</h3>
+                            <p class="receta__descripcion">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.</p>
+                            <button class="receta__boton">Ver receta</button>
+                        </div>
+                    </div>
+                    <div class="receta">
+                        <img alt="Pimentones a la Juliana" class="receta__imagen" src="./assets/img/recetas/pimentones-a-la-juliana.jpg" />
+                        <div class="receta__contenido">
+                            <h3 class="receta__titulo" title="Pimentones a la Juliana">Pimentones a la Juliana</h3>
+                            <p class="receta__descripcion">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.</p>
+                            <button class="receta__boton">Ver receta</button>
+                        </div>
+                    </div>
+                    <div class="receta">
+                        <img alt="Plato oriental" class="receta__imagen" src="./assets/img/recetas/plato-oriental.jpg" />
+                        <div class="receta__contenido">
+                            <h3 class="receta__titulo" title="Plato oriental">Plato oriental</h3>
+                            <p class="receta__descripcion">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.</p>
+                            <button class="receta__boton">Ver receta</button>
+                        </div>
+                    </div>
+                    <div class="receta">
+                        <img alt="Remolachas horneadas" class="receta__imagen" src="./assets/img/recetas/remolachas-horneadas.jpg" />
+                        <div class="receta__contenido">
+                            <h3 class="receta__titulo" title="Remolachas horneadas">Remolachas horneadas</h3>
+                            <p class="receta__descripcion">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse.</p>
+                            <button class="receta__boton">Ver receta</button>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="recetas">
-                <div class="receta">
-                    <img alt="Tigela de abacate" class="receta__imagen" src="./assets/img/recetas/bowl-de-aguacate.jpg" />
-                    <div class="receta__contenido">
-                        <h4 class="receta__titulo">Bowl de aguacate</h4>
-                        <p class="receta__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
-                        <button class="receta__boton">Ver receta</button>
+            <section class="quienes-somos" id="Quienes-somos">
+                <h3 class="quienes-somos__titulo">¿Quienes somos?</h3>
+                <p class="quienes-somos__descripcion">Conozca la comunidad por detrás de la iniciativa</p>
+                <div class="personas">
+                    <div class="persona">
+                        <div class="persona__imagen persona__imagen--roberta"></div>
+                        <span class="persona__nombre">Roberta</span>
+                        <span class="persona__funcion">Contenido</span>
+                    </div>
+                    <div class="persona">
+                        <div class="persona__imagen persona__imagen--marcela"></div>
+                        <span class="persona__nombre">Marcela</span>
+                        <span class="persona__funcion">Chef de cocina</span>
+                    </div>
+                    <div class="persona">
+                        <div class="persona__imagen persona__imagen--andrea"></div>
+                        <span class="persona__nombre">Andrea</span>
+                        <span class="persona__funcion">Pequeña Productora</span>
                     </div>
                 </div>
-                <div class="receta">
-                    <img alt="Ensalada de kiwi" class="receta__imagen" src="./assets/img/recetas/ensalada-de-kiwi.jpg" />
-                    <div class="receta__contenido">
-                        <h4 class="receta__titulo">Ensalada de kiwi</h4>
-                        <p class="receta__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
-                        <button class="receta__boton">Ver receta</button>
-                    </div>
-                </div>
-                <div class="receta">
-                    <img alt="Mix de vegetales" class="receta__imagen" src="./assets/img/recetas/mix-de-vegetales.jpg" />
-                    <div class="receta__contenido">
-                        <h4 class="receta__titulo">Mix de vegetales</h4>
-                        <p class="receta__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
-                        <button class="receta__boton">Ver receta</button>
-                    </div>
-                </div>
-                <div class="receta">
-                    <img alt="Pimentones a la Juliana" class="receta__imagen" src="./assets/img/recetas/pimentones-a-la-juliana.jpg" />
-                    <div class="receta__contenido">
-                        <h4 class="receta__titulo">Pimentones a la Juliana</h4>
-                        <p class="receta__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
-                        <button class="receta__boton">Ver receta</button>
-                    </div>
-                </div>
-                <div class="receta">
-                    <img alt="Plato oriental" class="receta__imagen" src="./assets/img/recetas/plato-oriental.jpg" />
-                    <div class="receta__contenido">
-                        <h4 class="receta__titulo">Plato oriental</h4>
-                        <p class="receta__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
-                        <button class="receta__boton">Ver receta</button>
-                    </div>
-                </div>
-                <div class="receta">
-                    <img alt="Remolachas horneadas" class="receta__imagen" src="./assets/img/recetas/remolachas-horneadas.jpg" />
-                    <div class="receta__contenido">
-                        <h4 class="receta__titulo">Remolachas horneadas</h4>
-                        <p class="receta__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
-                        <button class="receta__boton">Ver receta</button>
-                    </div>
-                </div>
-        </section>
-        <section class="quienes-somos">
-            <h3 class="quienes-somos__titulo">¿Quienes somos?</h3>
-            <p class="quienes-somos__descripcion">Conozca la comunidad por detrás de la iniciativa</p>
-            <div class="personas">
-                <div class="persona">
-                    <div class="persona__imagen persona__imagen--roberta"></div>
-                    <span class="persona__nombre">Roberta</span>
-                    <span class="persona__funcion">Contenido</span>
-                </div>
-                <div class="persona">
-                    <div class="persona__imagen persona__imagen--marcela"></div>
-                    <span class="persona__nombre">Marcela</span>
-                    <span class="persona__funcion">Chef de cocina</span>
-                </div>
-                <div class="persona">
-                    <div class="persona__imagen persona__imagen--andrea"></div>
-                    <span class="persona__nombre">Andrea</span>
-                    <span class="persona__funcion">Pequeña Productora</span>
-                </div>
-            </div>
-        </section>
+            </section>
         </main>
         <footer class="pie-pagina">
-            contacto: ejemplo@gmail.com
+            <div>
+                Contacto: ejemplo@gmail.com
+                <div class="pie-pagina__volver-arriba">
+                    <a href="#volver-arriba">
+                        <i class="fa-solid fa-arrow-up"></i>    
+                        Volver arriba
+                    </a>
+                </div>
+            </div>
         </footer>
+
+        <script defer src="js/menu.js?version=1.0.0" ></script>
     </body>
 </html>
