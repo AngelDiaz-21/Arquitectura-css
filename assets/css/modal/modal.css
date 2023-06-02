@@ -1,0 +1,149 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
+  z-index: 200;
+}
+
+.popup {
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 10px 4px rgba(19, 35, 47, 0.3);
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 60%;
+  transition: .5s ease all;
+  transform: scale(.1);
+  opacity: 0;
+}
+
+.popup.active {
+  opacity: 1;
+  transform: scale(1)
+}
+
+.contenedor-cerrar{
+  display: flex;
+  justify-content: end;
+  height: auto;
+  padding: 5px 5px 0 0;
+}
+
+.popup .btn-cerrar-popup {
+  font-size: 1.2rem;
+  color: #BBBBBB;
+  transition: .3s ease all;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.popup .btn-cerrar-popup:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.contenedor-elementos{
+  padding: 0 20px 20px 20px;
+}
+
+.titleMeal{
+  font-size: 1.5rem;
+  margin-bottom: 0.3em;
+}
+
+.videoMeal{
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+  /* height: 300px; */
+  height: 40vh;
+}
+
+.imageMeal{
+  display: none;
+}
+
+.contenedor-elementos a {
+  display: none;
+}
+
+.subTitles{
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+.contentInstructions{
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.instructions{
+  margin: 0;
+  height: 80px;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.list-group{
+  height: 80px;
+  overflow-y: auto;
+  margin: 0 0 0 0;
+  background-color: antiquewhite;
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+
+.items{
+  padding: 2px 0;
+}
+
+@media screen and (max-width: 480px){
+  .popup {
+    width: 75%;
+  }
+
+  .titleMeal{
+    font-size: 1.2rem;
+  }
+
+  .contenedor-elementos{
+    padding: 0 20px 10px 20px;
+  }
+
+  .videoMeal{
+    display: none;
+  }
+
+  .imageMeal{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    height: 22vh;
+  }
+
+  .contenedor-elementos a {
+    display: block;
+    font-size: 0.8rem;
+    text-align: right;
+    margin-top: 0.5em;
+  }
+
+  .list-group{
+    margin: 0 0 1em 0;
+  }
+}
