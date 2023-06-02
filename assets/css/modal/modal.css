@@ -57,6 +57,7 @@
 
 .contenedor-elementos{
   padding: 0 20px 20px 20px;
+  opacity: 0;
 }
 
 .titleMeal{
@@ -110,6 +111,21 @@
 
 .items{
   padding: 2px 0;
+}
+
+.popup.popup.active .contenedor-elementos {
+  animation: entradaElementos 1s ease 1s forwards;
+}
+
+@keyframes entradaElementos {
+  from{
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  to{
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
 @media screen and (max-width: 480px){
