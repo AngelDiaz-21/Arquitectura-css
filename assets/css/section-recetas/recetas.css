@@ -21,7 +21,6 @@
 .receta__imagen{
     width: 100%;
     /* height: 180px; */
-    height: 25vh;
     border-radius: 8px 8px 0 0;
 }
 
@@ -76,11 +75,19 @@
     .receta:nth-child(3n){
         margin-right: 0;
     }
+
+    .receta__imagen{
+        height: 22vh;
+    }
 }
 
 @media screen and (min-width: 801px){
     .receta {
         width: calc(34% - 2em);
+    }
+
+    .receta__imagen{
+        height: 25vh;
     }
 }
 
@@ -95,6 +102,10 @@
 
     .receta:nth-child(4n){
         margin-right: 0;
+    }
+
+    .receta__imagen{
+        height: 25vh;
     }
 }
 
@@ -127,6 +138,10 @@
     .receta:nth-child(2n){
         margin-right: 0;
     }
+
+    .receta__imagen{
+        height: 25vh;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -138,5 +153,15 @@
     .receta {
         width: 80%;
         margin-right: 0;
+    }
+
+    .receta__imagen{
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .receta__imagen{
+        height: 25vh;
     }
 }
