@@ -4,14 +4,20 @@ const submit = document.getElementById('submit');
 const mealEl = document.getElementById('recetas-cards');
 const randomMealBtn = document.getElementById('randomBtn');
 const messageSearch = document.getElementById('messageSearch');
+const btnSearch = document.getElementById('btnBuscar');
 let lastSeachType   = '';
 
 const searchMeal = (event) => {
     event.preventDefault();
     const termino = search.value;
-    lastSeachType = 'search';
-    createCard(termino);
-    messageSearch.textContent = `Resultado de la búsqueda de ${termino}`;
+    
+    if(termino !== ''){
+        lastSeachType = 'search';
+        createCard(termino);
+        messageSearch.textContent = `Resultado de la búsqueda de ${termino}`;
+    }else{
+        btnSearch.disabled = true;
+    }
 }
 
 const randomMeal = (event) => {
